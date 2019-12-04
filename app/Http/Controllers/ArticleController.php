@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class ArticleController extends Controller
 {
+    
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +16,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $articles = \App\Article::all();
+        return view('articles.articles')->with('articles', $articles);
     }
 
     /**
@@ -23,7 +27,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('articles.create');
     }
 
     /**
@@ -34,7 +38,25 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+            $articles = new Article();
+
+            $articles->name = $request->input('name');
+            $articles->description = $request->input('description');
+
+            if ($request->hasFile('image')){
+                $file = $request->file('image');
+                $extension = $file->getClientOriginalExtension();
+                $filename = time() . '.' . $extension;
+                $file->move('image/articles/', $filename);
+                $articles->image = $filename;
+            }   else {
+                    return $request;
+                    $articles->image = '';
+                }
+        $articles->save();    
+    
+        return redirect('articles/create')->with('articles', $articles);
+        
     }
 
     /**

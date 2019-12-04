@@ -1,2 +1,10 @@
 [2019-12-04 14:20:17.784] [sharedprocess] [info] main {"machineId":"bf46e20972bfccfdb616a5cb5efeb08c8d46c9db200c238cc8cc8d8cfd047ca6","windowId":2}
 [2019-12-04 14:20:57.779] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-12-04 16:59:52.435] [sharedprocess] [info] Uninstalling extension: animus-coop.vscode-phpstorm-formatter
+[2019-12-04 16:59:52.443] [sharedprocess] [info] Successfully uninstalled extension: animus-coop.vscode-phpstorm-formatter
+[2019-12-04 17:40:57.731] [sharedprocess] [info] Installing extension: animus-coop.vscode-phpstorm-formatter
+[2019-12-04 17:40:58.524] [sharedprocess] [info] Downloaded extension: animus-coop.vscode-phpstorm-formatter /tmp/8659aed7-0c53-45eb-b70b-0ad2a6c2ee56
+[2019-12-04 17:40:58.557] [sharedprocess] [info] Removed the extension from uninstalled list: animus-coop.vscode-phpstorm-formatter
+[2019-12-04 17:40:58.561] [sharedprocess] [info] Extensions installed successfully: animus-coop.vscode-phpstorm-formatter
+[2019-12-04 17:43:01.823] [sharedprocess] [info] Uninstalling extension: animus-coop.vscode-phpstorm-formatter
+[2019-12-04 17:43:01.830] [sharedprocess] [info] Successfully uninstalled extension: animus-coop.vscode-phpstorm-formatter
