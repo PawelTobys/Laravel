@@ -1,0 +1,23 @@
+[Info  - 10:20:12] Initialising intelephense 1.3.1
+[Info  - 10:20:12] Initialised in 16 ms
+[Info  - 10:20:12] Indexing started.
+[Info  - 10:20:15] Indexing ended. 99 files indexed in 3s.
+[Info  - 10:20:15] Indexing started.
+[Warn  - 10:20:15] file:///home/pawel/dev/PHP/Laravel/Task/vendor/fzaninotto/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 10:20:30] Indexing ended. 5002 files indexed in 14s.
+[Info  - 10:20:30] Writing state to /home/pawel/dev/PHP/Laravel/Modules/arguments/User/workspaceStorage/a63cd90e2d9dc5cb592b17e09ea35509/bmewburn.vscode-intelephense-client/679953c9.
+[Info  - 10:20:31] Wrote state in 1.1s.
+[Info  - 10:23:17] Indexing started.
+[Info  - 10:23:17] Indexing ended. 1 files indexed in 0s.
+[Info  - 10:23:19] Indexing started.
+[Info  - 10:23:19] Indexing ended. 1 files indexed in 0s.
+[Info  - 10:23:47] Indexing started.
+[Info  - 10:23:47] Indexing ended. 1 files indexed in 0s.
+[Info  - 10:24:19] Indexing started.
+[Info  - 10:24:19] Indexing ended. 1 files indexed in 0s.
+[Info  - 10:24:22] Indexing started.
+[Info  - 10:24:22] Indexing ended. 1 files indexed in 0s.
+[Info  - 10:24:27] Indexing started.
+[Info  - 10:24:28] Indexing ended. 1 files indexed in 0s.
+[Info  - 10:27:20] Indexing started.
+[Info  - 10:27:20] Indexing ended. 1 files indexed in 0s.
