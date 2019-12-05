@@ -117,6 +117,7 @@ address {
   line-height: inherit;
 }
 
+
 ol,
 ul,
 dl {
@@ -503,6 +504,11 @@ mark,
 
 .blockquote-footer::before {
   content: "\2014\A0";
+}
+
+.img-article {
+  max-width: 300px;
+  height: auto;
 }
 
 .img-fluid {
@@ -11356,3 +11362,6 @@ a.text-dark:focus {
   }
 }
 
+.pagination ul li{
+  display:in-line;
+  }

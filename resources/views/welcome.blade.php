@@ -61,10 +61,20 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .img-article {
+                width: 300px;
+                height: 200px;
+            }
+
+            td {
+                border-bottom: 2px solid black;
+            }
+
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -78,24 +88,15 @@
                     @endauth
                 </div>
             @endif
-
+               
             <div class="content">
                 <div class="title m-b-md">
                     Products
-                </div>
-
-                <div class="links">
-                    <a href="{{ url('articles/create') }}">Add products</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
                 </div>
                 <div>
                     @yield('content')
                 </div>
             </div>
-        </div>
+        </div> 
     </body>
 </html>

@@ -1,0 +1,8 @@
+[Info  - 22:40:41] Initialising intelephense 1.3.1
+[Info  - 22:40:41] Reading state from /home/pawel/dev/PHP/Laravel/Modules/arguments/User/workspaceStorage/fabdf0a8acce1d8ff1c01394af79439d/bmewburn.vscode-intelephense-client/4712246b.
+[Info  - 22:40:43] Initialised in 1706 ms
+[Info  - 22:40:44] Indexing started.
+[Warn  - 22:40:44] file:///home/pawel/dev/PHP/Laravel/Modules/vendor/fzaninotto/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 22:40:44] Indexing ended. 2 files indexed in 0s.
+[Info  - 22:40:44] Writing state to /home/pawel/dev/PHP/Laravel/Modules/arguments/User/workspaceStorage/fabdf0a8acce1d8ff1c01394af79439d/bmewburn.vscode-intelephense-client/4712246b.
+[Info  - 22:40:45] Wrote state in 0.9s.

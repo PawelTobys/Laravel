@@ -1,22 +1,44 @@
 @extends('welcome')
 
 @section('content')
-
-    <div class="cointaner">
-  <div class="row justify-content-center">
-    <div>
-        <h1>List of products</h1>
-    @isset($articles)
-        <h2>Total products: {{ count($articles) }}</h2>
-        @foreach ($articles as $article)
-            <p>{{ $article->id}}. {{ $article->name}}</p>
-            <img src="/public/image/articles/{{$article->image}}" alt="image">
-            <p>Added on {{ $article->created_at }}</p>
-        @endforeach
-    @endisset
-
-    </div>
-  </div>
-</div>
-
-@endsection
+<div class="row">
+  <div class="col-sm-12">
+  @isset($articles)
+  <h1 class="display-3"> Products on this site: {{ $articles->count() }}</h1> 
+  @endisset
+      <h2 class="links">
+          <a href="{{ route('articles.create') }}">Add products</a>
+      </h2>   
+    <table class="table table-striped">
+      <thead class="thead">
+          <tr>
+            <td>ID</td>
+            <td>Image</td>
+            <td>Name</td>
+            <td>Description</td>
+            <td>Added on</td>
+            <td colspan="2">Actions</td>
+          </tr>
+      </thead>
+      <tbody class="tbody">
+          @foreach($articles as $article)
+          <tr>
+              <td> <img src="/storage/{{$article->image}}" alt="image" class="img-article"></td>
+              <td>{{$article->name}}</td>
+              <td>{{$article->description}}</td>
+              <td>{{ $article->created_at }} </td>
+              <td>
+                  <a href="{{ route('articles.edit',$article->id)}}" class="btn btn-primary"> <button>Edit</button></a>
+              </td>
+              <td>
+                  <form action="{{ route('articles.destroy', $article->id)}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                  </form>
+              </td>
+          </tr>
+          @endforeach
+      </tbody>
+    </table>
+  @endsection

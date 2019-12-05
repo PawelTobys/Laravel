@@ -3,7 +3,7 @@
 @section('content')
 <div class="cointaner">
         <div class="row justify-content-center">
-<form action="{{ route('addArticle') }}" method="POST" enctype="multipart/form-data">
+<form action="{{ route('articles.store') }}" method="POST" enctype="multipart/form-data">
     @csrf
     
     <div>
