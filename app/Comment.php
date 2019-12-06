@@ -17,6 +17,6 @@ class Comment extends Model
     }
 }
 
-$comment = Comment::find($id);
+// $comment = Comment::find($id);
     
-$article = $comment->article;
+// $article = $comment->article;

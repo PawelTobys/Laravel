@@ -511,6 +511,11 @@ mark,
   height: auto;
 }
 
+.img-article {
+  width: 600px;
+  height: auto;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;

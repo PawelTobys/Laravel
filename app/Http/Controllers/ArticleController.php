@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use App\Article;
 use Illuminate\Http\Request;
 
@@ -117,5 +118,11 @@ class ArticleController extends Controller
         $articles->delete();
 
         return redirect('/articles')->with('success', 'Contact deleted!');
+    }
+
+    public function article(Article $article) {
+
+        $comments = Comment::all();
+        return view('articles.article', compact('article', 'comments'));
     }
 }

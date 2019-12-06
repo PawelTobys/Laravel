@@ -11,6 +11,8 @@
 |
 */
 
+use App\Article;
+
 Route::get('/', 'ArticleController@index');
 
 Auth::routes();
@@ -18,3 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('articles', 'ArticleController');
+
+Route::get('/articles/{article}', [
+    'uses' => 'ArticleController@article',
+    'as' => 'article.article']
+    );
+
+Route::resource('comments', 'CommentController');

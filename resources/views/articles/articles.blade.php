@@ -12,21 +12,23 @@
     <table class="table table-striped">
       <thead class="thead">
           <tr>
-            <td>ID</td>
             <td>Image</td>
             <td>Name</td>
             <td>Description</td>
             <td>Added on</td>
-            <td colspan="2">Actions</td>
+            <td colspan="3">Actions</td>
           </tr>
       </thead>
       <tbody class="tbody">
           @foreach($articles as $article)
           <tr>
-              <td> <img src="/storage/{{$article->image}}" alt="image" class="img-article"></td>
+              <td> <img src="/storage/{{$article->image}}" alt="image" class="img-articles"></td>
               <td>{{$article->name}}</td>
               <td>{{$article->description}}</td>
               <td>{{ $article->created_at }} </td>
+              <td>
+                  <a href="{{ route('article.article', $article)}}"><button>Comments</button></a>
+              </td>
               <td>
                   <a href="{{ route('articles.edit',$article->id)}}" class="btn btn-primary"> <button>Edit</button></a>
               </td>

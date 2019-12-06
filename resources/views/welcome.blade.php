@@ -62,9 +62,14 @@
                 margin-bottom: 30px;
             }
 
-            .img-article {
+            .img-articles {
                 width: 300px;
                 height: 200px;
+            }
+
+            .img-article {
+                width: 600px;
+                height: 400px;
             }
 
             td {
